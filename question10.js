@@ -25,9 +25,12 @@ const numbers = [1,2,3,4,5,6,7,8,9,10]
 
 function solution(numbers) {
   const answer = numbers.reduce( (acc, cur, index) => {
-    return (acc + cur) / numbers.length
+    return (acc + cur)
   }, 0);
-  console.log(answer / numbers.length);
+  const a = answer / numbers.length;
+  console.log(a);
+  
+  return a
 }
 
 solution(numbers);
