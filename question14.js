@@ -30,13 +30,27 @@ dot이 [-7, 9]로 x 좌표가 음수, y 좌표가 양수이므로 제 2 사분�
 */
 
 function solution(dot) {
-
-
+  // 배열의 인덱스로 접근하여 Math.sign 메소드를 통하여 문제를 해결할 수 있었다.
+  if (Math.sign(dot[0]) === 1 && Math.sign(dot[1]) === 1) {
+    return console.log(1)
+  } else if (Math.sign(dot[0]) === -1 && Math.sign(dot[1]) === 1) {
+    return console.log(2)
+  } else if (Math.sign(dot[0]) === -1 && Math.sign(dot[1]) === -1) {
+    return 3
+  } else {
+    return 4
+  }
 }
-
 solution([2,4]);
 
-// 배열에 담긴 값을 확인하는 문제기
+function solution2(dot) {
+  return ((Math.sign(dot[0]) === 1 && Math.sign(dot[1]) === 1)) ? 1 : 
+  ((Math.sign(dot[0]) === -1 && Math. sign(dot[1]) === 1)) ? 2 :
+  ((Math.sign(dot[0]) === -1 && Math. sign(dot[1]) === -1)) ? 3 : 4
+}
+solution2([2,4]);
+
+// 배열에 담긴 값을 확인하는 문제이다.
 // 조건문을 통해서 양수와 음수를 구분하면 됨
 // 삼항 연산자로 표현할 수 있을까?
 
