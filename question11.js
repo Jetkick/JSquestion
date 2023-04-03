@@ -23,9 +23,9 @@ n / 10 ≤ k < 1,000
 */
 
 function solution(n, k) {
-  const g = (n / 10)
+  const answer = (n / 10)
 
-  return (n * 12000) + (k * 2000) - (Math.floor(g) * 2000);
+  return (n * 12000) + (k * 2000) - (Math.floor(answer) * 2000);
 }
 
 solution(10, 3)
