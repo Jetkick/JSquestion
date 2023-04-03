@@ -21,6 +21,10 @@
 */
 
 function solution (numbers, num1, num2) {
+  // 숫자로 들어간 num2 값과 index 번호의 값의 범위가 다르므로
+  // 1을 더해줌
+  const answer = numbers.slice(num1, num2 + 1);
+  return answer
 }
 
 // 말로 표현하고 난 후 코드로 표현하기
