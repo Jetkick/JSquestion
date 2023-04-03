@@ -21,6 +21,8 @@ numbers의 원소들의 평균 값은 94.0입니다.
 
 */
 
+//
+
 const numbers = [1,2,3,4,5,6,7,8,9,10]
 
 function solution(numbers) {
