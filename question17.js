@@ -24,6 +24,22 @@ map 메소드는 반환시 새로운 배열에 담아 반환해준다.
 */
 
 function solution(strlist) {
+  // 새로운 변수를 선언하고 빈 배열을 할당해준다.
+  const answer = [];
 
+  // 매개변수 값을 foreach 메소드로 순회한다.
+  // 순회하면서 매개변수에 할당되어 있는 문자열 값을
+  // 길이로 변환해준후, 빈 배열 변수에 담아 반환한다.
+  strlist.forEach(element =>
+    answer.push(element.length)
+    )
+  return answer
 }
 solution(["we", 'aer', "the", 'world!']);
+
+// map 메소드를 사용했을 때의 예시
+function solution2 (strlist) {
+  return strlist.map(element => element.length);
+}
+
+solution2(["we", 'aer', "the", 'world!']);
