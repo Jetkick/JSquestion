@@ -26,13 +26,11 @@ numbers의 원소들의 평균 값은 94.0입니다.
 const numbers = [1,2,3,4,5,6,7,8,9,10]
 
 function solution(numbers) {
-  const answer = numbers.reduce( (acc, cur, index) => {
-    return (acc + cur)
+  const answer = numbers.reduce( (acc, cur, index, a) => {
+    console.log(acc);
+    return acc + cur
   }, 0);
-  const a = answer / numbers.length;
-  console.log(a);
-  
-  return a
+  return answer / numbers.length
 }
 
 solution(numbers);

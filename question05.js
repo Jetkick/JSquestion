@@ -25,8 +25,8 @@ num1이 1, num2가 16이므로 1 / 16 = 0.0625에 1,000을 곱하면 62.5가 되
 */
 
 function solution(num1, num2) {
-  let answer = (num1 / num2) * 1000 // let으로 선언한 이유가 있나요?
-  
+  const answer = (num1 / num2) * 1000
   return Math.floor(answer)
 }
+solution(3, 2)
 // let answer = parseInt(num1 / num2 * 1000);
