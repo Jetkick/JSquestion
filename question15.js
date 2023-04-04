@@ -17,7 +17,13 @@
 입출력 예 #2
 
 [1, 3, 5]의 1번째 인덱스 3부터 2번째 인덱스 5까지 자른 [3, 5]를 return 합니다.
+*/
 
+
+/*
+원본 배열을 slice 메소드로 num 범위 값 만큼 추출하여 새로운 배열에 반환합니다.
+slice 메소드는 새로운 배열 객체로 반환하니 slice 메소드에 num1, num2 값을 넣어
+새 배열에 담아냅니다.
 */
 
 function solution (numbers, num1, num2) {
@@ -26,11 +32,3 @@ function solution (numbers, num1, num2) {
   const answer = numbers.slice(num1, num2 + 1);
   return answer
 }
-
-// 말로 표현하고 난 후 코드로 표현하기
-/*
-원본 배열을 slice 메소드로 num 범위 값 만큼 추출하여 새로운 배열에 반환합니다.
-slice 메소드는 새로운 배열 객체로 반환하니 slice 메소드에 num1, num2 값을 넣어
-새 배열에 담아냅니다.
-
-*/

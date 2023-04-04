@@ -21,9 +21,8 @@ num1이 27, num2가 19이므로 27 * 19 = 513을 return합니다.
 
 
 function solution (num1, num2 ) {
-  if ( 0 <= num1 || num1 <= 100 || 0 <= num2 || num2 <= 100) {
-    return console.log(num1 * num2)
+  if (0 <= num1 && num1 <= 100 && 0 <= num2 && num2 <= 100) {
+    return num1 * num2
   }
-  return console.log(num1 * num2)
 }
 solution(3, 4);

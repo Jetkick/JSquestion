@@ -32,9 +32,9 @@ dot이 [-7, 9]로 x 좌표가 음수, y 좌표가 양수이므로 제 2 사분�
 function solution(dot) {
   // 배열의 인덱스로 접근하여 Math.sign 메소드를 통하여 문제를 해결할 수 있었다.
   if (Math.sign(dot[0]) === 1 && Math.sign(dot[1]) === 1) {
-    return console.log(1)
+    return 1
   } else if (Math.sign(dot[0]) === -1 && Math.sign(dot[1]) === 1) {
-    return console.log(2)
+    return 2
   } else if (Math.sign(dot[0]) === -1 && Math.sign(dot[1]) === -1) {
     return 3
   } else {

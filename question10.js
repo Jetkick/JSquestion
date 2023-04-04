@@ -28,7 +28,7 @@ function solution(numbers) {
     console.log(acc);
     return acc + cur
   }, 0);
-  return console.log(answer / numbers.length)
+  return answer / numbers.length
 }
 
 solution(numbers);

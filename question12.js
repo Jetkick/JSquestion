@@ -18,33 +18,42 @@
 입출력 예 #3
 
 15명이 최소 한 조각씩 먹기 위해서 최소 3판이 필요합니다.
-
 */
 
 
+/*
+이해를 못해서 힌트를 받아 풀었지만 정답을 찾지는 못함
+몫이 1이 나온 값 중 1을 더해야 하는 숫자의 범위가 있는데,
+(a % 7 === 1)에서 값이 충돌함
+*/
+
+/*
+  // 1명이 한 조각을 먹기 위해서는 1판이 필요하며, 
+  // 7명이 최소 한 조각씩 먹기 위해서는 1판이 필요하다.
+  // 15명이 한 조각씩 먹기 위해서는 3판이 필요하므로
+  // 피자는 한판당 7조각이 들어있다.
+  // 인수를 피자 조각으로 나눠서 값을 찾는다.
+*/
+
 function solution(n) {
-  // 변수 answer에 할당받은 n을 7로 나눈후
+  // n인분을 7로 나온 후
   let answer = Math.floor((n / 7))
   
-  console.log(answer % 7);
-  console.log(answer);
-  
-  // 변수 answer를 7로 나머지 값을 계산한 후 나온 몫을 반환.
+  // 나온 값을 나머지 값 7로 다시 나누면,
+  // 한조각씩 먹기 위한 피자 판 수를 찾을 수 있다.
   if (answer % 7 === 0) {
-    return console.log(answer + 1)
+    return answer + 1
   } else if (answer % 7 === 1) {
-    return console.log(answer)
+    return answer
   } else {
-    return console.log(answer + 1)
+    return answer + 1
   }
-
-
 }
 
 solution(32);
 
 /*
- -- 답안지 ??
+ -- 답안지 
 int answer = 0;
 if(n % 7 == 0){
     answer = n / 7;}
@@ -53,10 +62,4 @@ else if(n % 7 != 0){
 }
 return answer;
  -- 
-
-이해 자체를 못해서 힌트를 받아 풀어봤지만 결국 문제를 해결 못함.
-몫이 1이 나온 값 중 1을 더해야 하는 숫자가 있는데
-(a % 7 === 1) 에서 값이 충돌해서 접근이 안됨;
-
-
 */

@@ -26,7 +26,6 @@ num1이 1, num2가 16이므로 1 / 16 = 0.0625에 1,000을 곱하면 62.5가 되
 
 function solution(num1, num2) {
   const answer = (num1 / num2) * 1000
-  console.log(Math.floor((num1 / num2) * 1000));
   return Math.floor(answer)
 }
 solution(3, 2)
