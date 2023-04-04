@@ -26,6 +26,6 @@ num_list가 [1, 0, 1, 1, 1, 3, 5]이므로 순서를 거꾸로 뒤집은 배열 
 */
 
 function solution(num_list) {
-  
+  return num_list.reverse();
 }
 solution([1, 2, 3, 4, 5])
