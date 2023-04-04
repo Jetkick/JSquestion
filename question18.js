@@ -25,6 +25,17 @@ letter 변수에 포함되어 있는 문자열을 my_string 변수에서 삭제�
 */
 
 function solution(my_string, letter) {
-
+  // String 메소드 replaceAll 메소드를 이용하여
+  // my_string과 일치하는 letter의 값을 찾아서 삭제함으로써
+  // 원하는 값에 도달.
+  const answer = my_string.replaceAll(letter, '');
+  return answer;
 }
-solution()
+solution("BCBdbe", 'B');
+
+function solution2(my_string, letter) {
+  // split 메소드를 이용하여 값을 삭제한 후
+  // join 메소드로 붙이는 방법도 있다.
+  return my_string.split(letter).join('');
+}
+solution2("BCBdbe", "B");
