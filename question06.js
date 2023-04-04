@@ -25,7 +25,7 @@ num1이 7이고 num2가 99이므로 다릅니다. 따라서 -1을 return합니�
 */
 
 function solution(num1, num2) {
-  if ( 0 <= num1 <= 10000 || 0 <= num2 <= 10000) {
+  if ( 0 <= num1 <= 10000 || 0 <= num2 <= 10000) { // 이조건이 맞나요?
       if (num1 < num2 || num1 > num2) {
           return -1
       } else {
