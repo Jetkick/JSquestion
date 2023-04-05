@@ -19,11 +19,15 @@
 
 
 /*
-매개변수 money를 5500으로 나눈 후 나온 값 과 남은 값을
+매개변수 money를 5500으로 나눈 후 나온 값 과 남은 몫을
 차례대로 배열에 담도록 한다.
 */
 
 function solution (money) {
-  
+    // push 메소드 외의 방법으로 문제를 해결.
+    // 나눈 값을 변수에 담은 후 접근하는 방식으로 해결
+    const answer = Math.floor(money / 5500);
+    return Array.of(answer, (money - (answer * 5500))) // result 1
+    // return [answer, (money - (answer * 5500))]      // result 2
 }
 solution(5500)
