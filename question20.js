@@ -24,6 +24,10 @@ reverse 메서드가 먼저 생각이 날 수 있지만 reverse 메서드는 배
 
 
 function solution(my_string) {
-  
+  // 문자열을 split 메서드로 배열로 쪼갠후 reverse 메서드로 뒤집은 후
+  // join 메서드로 다시 문자열로 만들어서 반환했다.
+  // split('')의 의미는 split 메서드의 구분자에 문자열을 각각의 문자 별로 잘라내어
+  // 배열에 저장한다는 의미이다.
+  return my_string.split('').reverse().join('');
 }
 solution()
