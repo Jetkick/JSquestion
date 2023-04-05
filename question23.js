@@ -28,6 +28,7 @@ if문을 통해 문제를 해결한다.
 */
 
 function solution () {
+
   if (10 <= price && price <= 1000000) {
     if (price >= 100000 && price < 300000) {
       const answer = (price * 5 / 100)
@@ -44,6 +45,9 @@ function solution () {
       return Math.floor(price)
     }
   }
+  
+  // 23번 문제는 밤에 다시 한번 살필 생각이에요!
+
 }
 
 solution()
