@@ -30,24 +30,20 @@ if문을 통해 문제를 해결한다.
 function solution () {
 
   if (10 <= price && price <= 1000000) {
-    if (price >= 100000 && price < 300000) {
+    if (price < 100000) {
+      return Math.floor(price)
+    } else if (price >= 100000 && price < 300000) {
       const answer = (price * 5 / 100)
       return Math.floor(price - answer)
-    } else if (price < 100000) {
-      return Math.floor(price)
     } else if (price >= 300000 && price < 500000) {
-      const answer = Math.floor(price * 10 / 100)
+      const answer = (price * 10 / 100)
       return Math.floor(price - answer)
     } else if (price >= 500000) {
-      const answer = Math.floor(price * 20 / 100)
+      const answer = (price * 20 / 100)
       return Math.floor(price - answer)
-    } else {
-      return Math.floor(price)
     }
   }
   
-  // 23번 문제는 밤에 다시 한번 살필 생각이에요!
-
 }
 
 solution()
