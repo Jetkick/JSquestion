@@ -19,13 +19,11 @@
 
 
 /*
-
+매개변수 money를 5500으로 나눈 후 나온 값 과 남은 값을
+차례대로 배열에 담도록 한다.
 */
 
 function solution (money) {
-  if (0 < money && money <= 1000000) {
-
-  }
-
+  
 }
 solution(5500)
