@@ -17,11 +17,17 @@ n이 100 이므로 곱이 100인 순서쌍은 (1, 100), (2, 50), (4, 25), (5, 20
 */
 
 /*
-
+for문을 돌려서 순차적으로 나오는 자연수를 n값과 대조하여 
+나머지 값 0 과 일치하는 값을 찾아낸다
 */
 
 function solution (n) {
-  
-
+  const answer = [];
+  for (let i = 0; i <= n; i++) {
+    if(n % i === 0) {
+      answer.push(i);
+    }
+  }
+  return answer.length
 }
 solution(20)
